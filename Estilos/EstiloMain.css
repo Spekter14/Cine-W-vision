@@ -1,0 +1,24 @@
+
+#header{
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    padding: 50px;
+}
+
+#menu{
+    width: 100%;
+    height: 43px;
+}
+
+#menu > ul{
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+#menu > ul > li{
+    display: inline;
+    line-height: 40px;
+    transition: all 300ms;
+} 
