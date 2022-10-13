@@ -1,0 +1,23 @@
+nav{
+    background-color: #27496D;
+}
+
+
+.nav-link{
+    color: #ffffff
+}
+
+.navbar-brand{
+    color: #ffffff;
+    margin: 6px;
+}
+
+.comboBox{
+    margin: 6px;
+    padding: 6px;
+}
+
+.btn{
+    margin: 6px;
+}
+
