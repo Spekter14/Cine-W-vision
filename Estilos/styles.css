@@ -1,8 +1,17 @@
+.paletadecolores{
+  color: #142850;
+  color: #27496D;
+  color: #0C7B93;
+  color: #00A8CC;
+}
+
+
 /* ESTILO CONTENEDOR */
 
 .container1{
-    margin-bottom: 150px;
-    background-color: #00A8CC;
+  margin-bottom: 150px;
+  background-color: #0C7B93;
+  
     
 }
 
@@ -10,6 +19,9 @@
     color:#ffffff ;
 }
 
+.peliculas_proyectandose{
+  max-width: 960px;
+}
 
 
 
@@ -17,7 +29,7 @@
 .flex-container{
   display: flex;
   flex-wrap: wrap;
-  background-color: aquamarine;
+  background-color:#00A8CC;
   flex-direction: row;
   justify-content: space-between;
   
@@ -39,7 +51,7 @@
   
 }
 
-/* ESTILO OVERLAY */
+/* ESTILO OVERLAY  pelis disponibles */
 
 
 
@@ -59,18 +71,18 @@
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #00b862;
+  background-color: #142850;
 }
 
 .flex-container li:hover .overlay {
-  opacity: 1;
+  opacity: .90;
 }
 
-.text {
+.link_Peli {
   color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
+  font-size: 15px;
+  position: relative;
+  top: 10%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -78,12 +90,20 @@
   text-align: center;
 }
 
+.link_Peli a{
+  text-decoration:underline;
+  color: white;
+}
+
 
 
  /* estiLOs de  NAVBAR  */
 nav{
 
-    background-color: #27496D;
+  background-color: #27496D;
+  -webkit-box-shadow: 0px 9px 13px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 9px 13px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 9px 13px 0px rgba(0,0,0,0.75);
 
 }
 
@@ -128,7 +148,7 @@ nav{
 footer {
     position: relative;
     width: 100%;
-    background: #3586ff;
+    background: #00A8CC;
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
