@@ -2,7 +2,6 @@ nav{
     background-color: #27496D;
 }
 
-
 .nav-link{
     color: #ffffff
 }
@@ -21,37 +20,11 @@ nav{
     margin: 6px;
 }
 
-
-.cajita{
-  margin: auto;
-}
-
-.card{
-  background-color: #00A8CC;
-  border-width: 5px;
-  border-color: #27496D;
-}
-
 .container2{
-    margin-bottom: 90px;
-    padding-top: 100px;
+    margin-top: 200px;
+    margin-bottom: 200px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-}
-
-.container3{
-  margin-bottom: 90px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-} 
-
-.container4{
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 200px;
-  align-items: center;
 }
 
 footer {
@@ -158,7 +131,6 @@ footer .iconos_redes_sociales li a{
     bottom: 20px;
     animation: animateWave_2 3s linear infinite;
   }
-
 
   @keyframes animateWave{
 
