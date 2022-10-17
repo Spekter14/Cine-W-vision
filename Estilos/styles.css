@@ -1,3 +1,9 @@
+body{
+  font-family: 'Voces', cursive;
+}
+
+
+
 .paletadecolores{
   color: #142850;
   color: #27496D;
@@ -15,12 +21,15 @@
     
 }
 
-.container p{
+.container1 p{
     color:#ffffff ;
+    
+    
 }
 
 .peliculas_proyectandose{
   max-width: 960px;
+  
 }
 
 
