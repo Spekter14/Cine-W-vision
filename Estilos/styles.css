@@ -1,5 +1,6 @@
 body{
   font-family: 'Voces', cursive;
+  font-size: large;  
 }
 
 
@@ -113,6 +114,10 @@ nav{
   -webkit-box-shadow: 0px 9px 13px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 9px 13px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 9px 13px 0px rgba(0,0,0,0.75);
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
 
 }
 
@@ -143,7 +148,7 @@ nav{
 /* ESTILOS CARUSEL */
 .carousel-item {
     height: 65vh;
-    min-height: 350px;
+    max-height: 400px;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -151,6 +156,67 @@ nav{
     background-size: cover;
   }
   
+  .carousel-item img{
+  
+    display: block;
+    max-width: 1924px;
+  }
+  
+
+
+/* MEDIA QUERYS */
+
+@media (min-width: 428px) and (max-width: 740px)  {
+  
+
+  .carousel-item {
+    height: 134px;
+    max-height: 400px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+ 
+}
+
+
+
+
+@media (min-width: 740px) and (max-width: 834px)  {
+  
+
+  .carousel-item {
+    max-height: 280px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+ 
+}
+
+@media (min-width: 810px) and (max-width: 1200px)  {
+  
+
+  .carousel-item {
+    max-height: 400px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+ 
+}
+
+
+
 
 /* FOOTERR */
 

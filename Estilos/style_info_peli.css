@@ -164,10 +164,6 @@ a.btn-horario{
 
 
 
-.movie-info .expand-info{
-   
-}
-
 @media only screen and (max-width: 550px) {
   .contenedor_info_peli{
     grid-template-columns: 1fr;
