@@ -21,37 +21,34 @@ nav{
     margin: 6px;
 }
 
-
-.cajita{
-  margin: auto;
+.zafirst{
+  margin-top: 100px;
+  margin-bottom: 200px;
 }
 
 .card{
+  margin-top: 30px;
+  height: 500px;
+  background-color: #3586ff;
+}
+
+.card .card-body{
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.card img{
+  width: 286px;
+  height: 155px;
+}
+
+.card .btn{
+  margin-top: 20px;
   background-color: #00A8CC;
-  border-width: 5px;
-  border-color: #27496D;
 }
 
-.container2{
-    margin-bottom: 90px;
-    padding-top: 100px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.container3{
-  margin-bottom: 90px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-} 
-
-.container4{
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 200px;
-  align-items: center;
+.card .btn:hover{
+  color: #27496D;
 }
 
 footer {
@@ -182,3 +179,7 @@ footer .iconos_redes_sociales li a{
         background-position-x: 1000px;
     }
   }
+
+  
+
+  
