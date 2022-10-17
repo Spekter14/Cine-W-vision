@@ -46,8 +46,8 @@
   transform: translateY(-2px);
 }
 .leaderboard .header_rank .leaderboard__icon {
-  fill: rgb(223, 0, 0);
-  opacity: 0.35;
+  fill: goldenrod;
+  opacity: 1;
   width: 50px;
   position: absolute;
   top: 50%;

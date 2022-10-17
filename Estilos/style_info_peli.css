@@ -1,17 +1,27 @@
 
 .peliculas_proyectandose{
     max-width: 1200px;
+   
+    
+    
+   
   }
 
 body{
     font-family: 'Voces', cursive;
     font-size: large;
+    
   }
 
 .container2{ 
-  margin-bottom: 150px;
+  margin-bottom: 30px;
+  background-color: #0C7B93;
+  
+ 
 
-
+}
+.container2 p, h1{
+  color: rgb(0, 0, 0);
 }
 
 a.btn-horario{
@@ -142,7 +152,7 @@ a.btn-horario{
   -moz-border-radius: 27px 27px 27px 27px;
   -webkit-border-radius: 27px 27px 27px 27px;
   border: 3px solid #949494;
-  background-color: #f5f5f5;
+  background-color: #aaaaaa;
 
   display: flex;
   align-content: center;
