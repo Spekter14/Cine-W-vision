@@ -4,6 +4,10 @@ body{
 }
 
 
+.icono{
+  max-height: 40px;
+
+}
 
 .paletadecolores{
   color: #142850;
