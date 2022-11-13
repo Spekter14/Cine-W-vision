@@ -1,32 +1,55 @@
 
-
-.icono{
-  max-height: 40px;
-
+body{
+  font-family: 'Voces', cursive;
+  font-size: large;  
 }
 
+
+ /* estiLOs de  NAVBAR  */
 nav{
-    background-color: #27496D;
+
+  background-color: #27496D;
+  -webkit-box-shadow: 0px 9px 13px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 9px 13px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 9px 13px 0px rgba(0,0,0,0.75);
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+
 }
 
 
 .nav-link{
-    color: #ffffff
+    color: #ffffff;
+    margin: 6px;
+
 }
 
 .navbar-brand{
     color: #ffffff;
-    margin: 6px;
 }
 
 .comboBox{
     margin: 6px;
     padding: 6px;
-}
+  
+  }
+
 
 .btn{
     margin: 6px;
+  
+  }
+  
+.icono{
+  max-height: 40px;
+
 }
+
+
+
+
 
 .zafirst{
   margin-top: 100px;
@@ -42,6 +65,7 @@ nav{
 .card .card-body{
   margin-top: 0px;
   margin-bottom: 10px;
+  font-size: medium;
 }
 
 .card img{

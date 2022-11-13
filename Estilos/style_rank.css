@@ -1,5 +1,5 @@
 .contenedor_ranking {
-  margin-bottom: 150px;
+  margin-bottom: 0px;
   background-color: #0C7B93;
   width: 100%;
   display: flex;
@@ -20,6 +20,7 @@
   position: relative;
   border-radius: 12px 12px 0 0;
   overflow: hidden;
+  font-family: "Source Sans Pro", sans-serif;
 }
 .leaderboard .header_rank .leaderboard__title {
   position: absolute;
@@ -105,12 +106,17 @@
 body {
   margin: 0;
   background-color: #eaeaea;
-  display: grid;
+  
   height: 100vh;
   place-items: center;
-  font-family: "Source Sans Pro", sans-serif;
+  
 }
 
 .leaderboard {
   box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.4);
 }/*# sourceMappingURL=style_rank.css.map */
+
+.py-5{
+  padding-top: 3rem !important;
+  padding-bottom: 10rem !important;
+}

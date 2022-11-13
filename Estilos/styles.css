@@ -4,10 +4,6 @@ body{
 }
 
 
-.icono{
-  max-height: 40px;
-
-}
 
 .paletadecolores{
   color: #142850;
@@ -148,6 +144,12 @@ nav{
     margin: 6px;
   
   }
+
+  .icono{
+    max-height: 40px;
+  
+  }
+  
   
 
 /* ESTILOS CARUSEL */
