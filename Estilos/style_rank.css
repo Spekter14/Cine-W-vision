@@ -16,11 +16,12 @@
   --start: 15%;
   height: 130px;
   background-image: repeating-radial-gradient(circle at var(--start), transparent 0%, transparent 10%, rgba(54, 89, 219, 0.33) 10%, rgba(54, 89, 219, 0.33) 17%), linear-gradient(to right, #27496D, #00A8CC);
-  color: #fff;
+  color: rgb(0, 0, 0);
   position: relative;
   border-radius: 12px 12px 0 0;
   overflow: hidden;
   font-family: "Source Sans Pro", sans-serif;
+
 }
 .leaderboard .header_rank .leaderboard__title {
   position: absolute;
