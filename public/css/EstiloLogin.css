@@ -1,0 +1,90 @@
+body{
+    font-family: 'Voces', cursive;
+    font-size: large;  
+    background: url(../Imagenes/Fondo_estrellado.jpg);
+}
+
+.login-box{
+    height: 475px;
+    width: 350px;
+    background-color: #142850;
+    border-width: 2%;
+    border: #00A8CC;
+    border-radius: 10%;
+    color: #0C7B93;
+    position: absolute;
+    transform: translate(-50%, -5%);
+    left: 50%;
+    top: 20%;
+    right: 20%;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 1%;
+    box-sizing: border-box;
+}
+
+.login-box .avatar{
+    height: 95px;
+    width: 150px;
+    top: 50px;
+    left: 50px;
+    padding-left: 60px;
+    padding-bottom: 10px;
+}
+
+.login-box h1{
+    margin: 0;
+    padding: 0 0 40px;
+    display: block;
+    text-align: center;
+}
+
+.login-box label{
+    margin: 0%;
+    padding: 0%;
+    font-weight: bold;
+    display: block;
+}
+
+.login-box input{
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.login-box a{
+    background-color: #196BCA;
+    color: #fff;
+    font-family: Trebuchet MS;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    padding: 14px 35px;
+    border: 0px solid #000;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    right: -70px;
+   }
+   a.login:hover{
+    background-color: #5482d0;
+   }
+   a.login:active{
+    transform: scale(0.95);
+   }
+
+/*@media (min-width: 428px) and (max-width: 740px){
+
+    
+}*/
