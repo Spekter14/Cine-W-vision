@@ -1,6 +1,8 @@
 const { urlencoded } = require('body-parser');
 const express = require('express');
 const app = express();
+const path = require('path')
+const routes = require('./routes');
 
 // url encoder pa captuarar datos de form
 app.use(urlencoded({extended:false}));
@@ -8,16 +10,17 @@ app.use(express.json());
 
 // dotenv
 const dotenv = require('dotenv');
-dotenv.config({path:'./envc/.env'});
+dotenv.config({path:'./env/.env'});
 
 //directorio public
-app.use('/resourses',express.static('public'));
-app.use('/resourses',express.static(__dirname+ 'public'));
+app.use(express.static('public'))
 
 //motor de plantillas
 app.set('view engine','ejs');
 // bycrypt
 const bcrypt = require('bcryptjs');
+
+
 
 
 //7- variables de session
@@ -31,10 +34,37 @@ app.use(session({
 const connection = require('./database/db');
 
 console.log(__dirname);
-app.get('/',(req,res)=>{
 
-    res.send('holas mundo');
+app.use('/', routes);
+
+connection.query("SELECT * FROM usuarios",function(error,results,fields){
+    if(error)
+        throw error;
+        results.forEach(result=>{
+            console.log(result);
+        });
 })
+
+
+// connection.query("SELECT * FROM usuarios", function(error,results,fields){
+// 	if(error)
+// 		throw error;
+// 		results.foreach(result=>{
+// 			console.log(result);
+// 		});
+
+// })
+
+// app.get('/',(req,res)=>{
+
+//     res.render('index');
+// })
+
+
+// app.get('/',(req,res)=>{
+
+//     res.render('descripcionPeli');
+// })
 
 app.listen(3000,(req,res)=>{
 
