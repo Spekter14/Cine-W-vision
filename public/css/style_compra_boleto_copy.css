@@ -36,7 +36,8 @@
 }
 .containerr {
     perspective: 600px;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
+    max-width: 480px;
 }
 .row{
     display: flex;

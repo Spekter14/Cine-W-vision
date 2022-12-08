@@ -30,11 +30,16 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ms-auto">
+
+        <li>
+          <a class="nav-link" href="/user" ><%= name %></a>
+        </li>
+
         <li class="nav-item active">
           <a class="nav-link" href="/">Home</a>
         </li>
 
-
+       
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/pelicula">Cartelera</a>
@@ -64,8 +69,20 @@
           <option>Cine 2 </option>
         </select>
         </li>
+
+       
         <li class="nav-item">
-          <button class="btn btn-warning navbar-btn">Ver Cartelera</button>
+          <!-- <button class="btn btn-warning navbar-btn">Ver Cartelera</button>
+          <button class="btn btn-warning navbar-btn" onClick="location.href='/login'" type="button">Login</button>
+           -->
+          <% if (login) { %>                
+                                  
+            <button class="btn btn-warning navbar-btn" onClick="location.href='/logout'" type="button">Cerrar</button>
+        <%} else { %>
+            
+            <button class="btn btn-warning navbar-btn" onClick="location.href='/login'" type="button"><%= name %></button>
+        <% } %>
+        
         </li>
       </ul>
     </div>
@@ -123,7 +140,10 @@
   <!-- CONTENIDO -->
   <section class="py-5 container1">
     <div class="container peliculas_proyectandose">
-      <h1 class="fw-light">Peliculas Proyectandose</h1>
+      <h1 class="fw-light">Bienvenido:  Peliculas Proyectandose </h1>
+
+     
+
       <p class="lead">Sonido envolvente de 11.1 multi-canales con un sistema personalizado JBL , junto con un sistema de distribución de señales de audio digital. Altavoces principales y ambientales que reproducen sonidos: agudo, medios y graves; amplificación independiente para cada grupo de audio (agudos, medios y graves) para los canales principales (izquierdo, centro y derecho), además de los grandes sub-woofer para los sonidos mas graves como las explosiones.</p>
     
     <div class="row ">
@@ -182,7 +202,7 @@
   
     <div class="overlay">
       <div class="link_Peli">Black Adam</div>
-      <div class="link_Peli"><a href="/descripcionPeli5">Sipnosis</a></div>
+      <div class="link_Peli"><a href="/movies5">Sipnosis</a></div>
       <div class="link_Peli"><a href="#">Horarios</a></div>
     </div>
 

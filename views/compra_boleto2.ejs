@@ -74,19 +74,20 @@
   </div>
 </nav>
 
- <div class="contenedor_compra">
+ <div class="contenedor_compra" action="compra_boleto2" method="POST">
   
     <div class="main-container">
 
-      <label for="sala">Su sala es: Sala 1</label>
+      <h1><strong>Hola: <%= name %></strong></h1>   
+      <label for="sala" id="sala">Su sala es: Sala 1</label>
   
       
-      <label for="funcion">Su funcion es: 15:30 </label>
+      <label for="funcion" id="horario">Su funcion es: 15:30 </label>
       
 
       <label for="">Su pelicula es: </label>
       <select id="movie">
-          <option value="15">Black Adam ($15)</option>
+          <option value="15" id="peli">Black Adam ($15)</option>
       </select>
 
 
@@ -117,8 +118,8 @@
           <div class="seat">6</div>
           <div class="seat">8</div>
           <div class="seat">9</div>
-      </div>
-      <div class="row">
+      
+     
           <div class="seat">10</div>
           <div class="seat">11</div>
           <div class="seat">12</div>
@@ -127,8 +128,8 @@
           <div class="seat">15</div>
           <div class="seat">16</div>
           <div class="seat">17</div>
-      </div>
-      <div class="row">
+      
+      
           <div class="seat">18</div>
           <div class="seat">19</div>
           <div class="seat">20</div>
@@ -137,8 +138,8 @@
           <div class="seat">23</div>
           <div class="seat">24</div>
           <div class="seat">25</div>
-      </div>
-      <div class="row">
+      
+      
           <div class="seat">26</div>
           <div class="seat">27</div>
           <div class="seat">28</div>
@@ -147,8 +148,8 @@
           <div class="seat">33</div>
           <div class="seat">34</div>
           <div class="seat">35</div>
-      </div>
-      <div class="row">
+      
+      
           <div class="seat">36</div>
           <div class="seat">37</div>
           <div class="seat">38</div>
@@ -157,8 +158,8 @@
           <div class="seat">41</div>
           <div class="seat">42</div>
           <div class="seat">43</div>
-      </div>
-      <div class="row">
+      
+      
           <div class="seat">44</div>
           <div class="seat">45</div>
           <div class="seat">46</div>
@@ -167,12 +168,83 @@
           <div class="seat">49</div>
           <div class="seat">50</div>
           <div class="seat">51</div>
-      </div>
+      
     </div>
+    </div>
+    <form action="compra_boleto2" method="POST">
     <p class="text">
-      Ha selecionado <span id="count">0</span> asientos para un total de: $<span id="total">0</span>
+      Ha selecionado 
+      <label  id="count" name="count">0</label> 
+      asientos para un total de: 
+      $<label id="total" name="total">0</label>
     </p>
-    <script src="css/compra_boleto_copy.js"></script> 
+
+    
+    <input style="visibility:hidden ;"id="count2" type="number" name="count" placeholder="User"  required >
+		<input  style="visibility:hidden ;" id="total2" type="number" name="total" placeholder="Password" required>
+
+    <input style="visibility:hidden ;" id="pelicula" type="text" name="pelicula"  required>
+    <input style="visibility:hidden ;" id="hora" type="text" name="hora"  required>
+   
+
+    
+
+    <input class="btn btn-warning navbar-btn" type="submit" class="btn-login" value="comprar">
+		</form>
+		
+ </div>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    
+    <script >
+ 
+
+      //Get dom elements
+      
+        const container = document.querySelector('.containerr'); //get container element
+        const seats =  document.querySelectorAll('.row .seat:not(.occupied');
+        const count = document.getElementById('count');
+        const total = document.getElementById('total');
+        const movieSelect = document.getElementById('movie');
+
+        const count2 = document.getElementById('count2');
+        const total2 = document.getElementById('total2')
+
+        let ticketPrice = +movieSelect.value;
+
+        document.getElementById("pelicula").value = document.getElementById("peli").innerHTML;
+        document.getElementById("hora").value = document.getElementById("horario").innerHTML;
+
+        function updateSelectedCount(){
+            const selectedSeats = document.querySelectorAll('.row .seat.selected');
+            const selectedSeatsCount =  selectedSeats.length;
+            count.innerText =  selectedSeatsCount;
+            total.innerText = ticketPrice * selectedSeatsCount;
+            
+            document.getElementById("count2").value = document.getElementById("count").innerHTML;
+            document.getElementById("total2").value = document.getElementById("total").innerHTML;
+            
+
+        
+
+        }
+        // Event listener for clicking on seats
+        container.addEventListener('click', e =>{
+            if (e.target.classList.contains('seat') && !e.target.classList.contains('occupied')){
+                e.target.classList.toggle('selected');
+                updateSelectedCount();
+            };
+        })
+        //Event listener for selecting movie
+        movieSelect.addEventListener('change', e=>{
+            ticketPrice = +e.target.value;
+            updateSelectedCount();
+        })
+
+        // function OnSubmit() {
+        //         document.getElementById("count2").value = document.getElementById("count").innerHTML;
+        //     }
+
+    </script> 
 </div>
 
 
